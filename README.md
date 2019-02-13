@@ -33,6 +33,14 @@ Transfer-Encoding: chunked
 
 👍 **If you're here, you're ready to start!**
 
+## Potential Build Issues
+Depending on the editor/IDE you choose you may get a warning about the netstandard version. You can safely add a reference to the AspNetCore.App dependency in the csproj file to resolve it. Note that this will introduce warnings in the 'dotnet build' output.
+```
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" Version="2.2.2"/>
+  </ItemGroup>
+```
+
 
 ## One Last Thing
 Don't forget to read the challenge document thoroughly and send an email to the recipient specififed with your planned submission deadline. If you forget to do this we may assume you've elected to drop out of the hiring process!
