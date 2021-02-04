@@ -30,7 +30,6 @@ namespace Tasklify
         {
             services.AddSingleton<IUsersDAL, DemoUsersDAL>();
             services.AddSingleton<ITasksDAL, DemoTasksDAL>();
-            services.AddControllers();
             services.AddControllers().AddNewtonsoftJson();
         }
 
