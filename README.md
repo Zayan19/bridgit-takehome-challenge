@@ -22,24 +22,16 @@ curl --insecure -i https://localhost:5001/api/users
 ```
 And the result should look like this:
 ```
-HTTP/1.1 200 OK
-Date: Wed, 13 Feb 2019 17:39:49 GMT
-Content-Type: application/json; charset=utf-8
-Server: Kestrel
-Transfer-Encoding: chunked
+HTTP/2 200 
+date: Thu, 04 Feb 2021 15:35:09 GMT
+content-type: application/json; charset=utf-8
+server: Kestrel
 
 []
 ```
 
 👍 **If you're here, you're ready to start!**
 
-## Potential Build Issues
-Depending on the editor/IDE you choose you may get a warning about the netstandard version. You can safely add a reference to the AspNetCore.App dependency in the csproj file to resolve it. Note that this will introduce warnings in the 'dotnet build' output.
-```
-  <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.App" Version="2.2.2"/>
-  </ItemGroup>
-```
 
 
 ## One Last Thing
