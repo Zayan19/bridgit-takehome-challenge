@@ -3,6 +3,9 @@
 Hello there!  
 If you're looking at this repo there's a _very_ good chance you're taking one of our take-home coding challenge. If so, thanks again for your time & interest! 
 
+## Challenge Details
+All you need to know about this challenge and how to submit it when complete can be found in  [this pdf file](Take-Home-Instructions.pdf). The actual challenge you'll be tasked with will be provided by the Bridgit recruiter you're in contact with. Please read both documents thoroughly before you start!
+
 ## Readiness Check
 Before you start, be sure to read through the PDF challenge document you received. There are a few different versions of the challenge which is why the text isn't included here.
 ### Test Build
@@ -32,7 +35,8 @@ server: Kestrel
 
 👍 **If you're here, you're ready to start!**
 
-
+## Postman Collection
+To simplify testing of the API there is a basic Postman collection available in this repo [here](/Postman/Tasklify.postman_collection.json)
 
 ## One Last Thing
 Don't forget to read the challenge document thoroughly and send an email to the recipient specififed with your planned submission deadline. If you forget to do this we may assume you've elected to drop out of the hiring process!
