@@ -3,6 +3,9 @@
 Hello there!  
 If you're looking at this repo there's a _very_ good chance you're taking one of our take-home coding challenge. If so, thanks again for your time & interest! 
 
+## Challenge Details
+All you need to know about this challenge and how to submit it when complete can be found in  [this pdf file](Take-Home-Instructions.pdf). The actual challenge you'll be tasked with will be provided by the Bridgit recruiter you're in contact with. Please read both documents thoroughly before you start!
+
 ## Readiness Check
 Before you start, be sure to read through the PDF challenge document you received. There are a few different versions of the challenge which is why the text isn't included here.
 ### Test Build
@@ -22,25 +25,18 @@ curl --insecure -i https://localhost:5001/api/users
 ```
 And the result should look like this:
 ```
-HTTP/1.1 200 OK
-Date: Wed, 13 Feb 2019 17:39:49 GMT
-Content-Type: application/json; charset=utf-8
-Server: Kestrel
-Transfer-Encoding: chunked
+HTTP/2 200 
+date: Thu, 04 Feb 2021 15:35:09 GMT
+content-type: application/json; charset=utf-8
+server: Kestrel
 
 []
 ```
 
 👍 **If you're here, you're ready to start!**
 
-## Potential Build Issues
-Depending on the editor/IDE you choose you may get a warning about the netstandard version. You can safely add a reference to the AspNetCore.App dependency in the csproj file to resolve it. Note that this will introduce warnings in the 'dotnet build' output.
-```
-  <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.App" Version="2.2.2"/>
-  </ItemGroup>
-```
-
+## Postman Collection
+To simplify testing of the API there is a basic Postman collection available in this repo [here](/Postman/Tasklify.postman_collection.json)
 
 ## One Last Thing
 Don't forget to read the challenge document thoroughly and send an email to the recipient specififed with your planned submission deadline. If you forget to do this we may assume you've elected to drop out of the hiring process!
