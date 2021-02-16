@@ -11,6 +11,7 @@ namespace Tasklify.Interfaces
         Task<TasklifyUser> AddUserAsync(string email, string name);
         Task<bool> RemoveUserByIdAsync(int id);
         Task<TasklifyUser> GetUserByIdAsync(int id);
-        Task<bool> UpdateUserByIdAsync(int id, TasklifyUser user);
+        Task<TasklifyUser> GetUserByEmailAsync(string email);
+        Task<TasklifyUser> UpdateUserByIdAsync(int id, TasklifyUser user);
     }
 }

@@ -6,7 +6,7 @@ using Tasklify.Contracts;
 
 namespace Tasklify.Interfaces
 {
-    public interface ITasksDAL
+    public interface ITasksBLL
     {
         Task<IList<TasklifyTask>> GetAllAsync();
         Task<TasklifyTask> AddAsync(string summary, string description, int? assignee_id);

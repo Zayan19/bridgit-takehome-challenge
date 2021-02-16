@@ -28,8 +28,9 @@ namespace Tasklify
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddSingleton<IUsersDAL, DemoUsersDAL>();
-            services.AddSingleton<ITasksDAL, DemoTasksDAL>();
+            var _uDal = new DemoUsersDAL();
+            services.AddSingleton<IUsersDAL, DemoUsersDAL>(u => _uDal);
+            services.AddSingleton<ITasksBLL, DemoTasksBLL>(x => new DemoTasksBLL(_uDal));
             services.AddControllers().AddNewtonsoftJson();
         }
 

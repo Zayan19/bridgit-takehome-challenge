@@ -14,12 +14,9 @@ namespace Tasklify.Contracts
 
         public TasklifyUser(int id, string email, string name)
         {
-            if (!string.IsNullOrWhiteSpace(email) && !string.IsNullOrWhiteSpace(name))
-            {
-                Id = id;
-                Email = email;
-                Name = name;
-            }
+            Id = id;
+            Email = email;
+            Name = name;
         }
     }
 }
