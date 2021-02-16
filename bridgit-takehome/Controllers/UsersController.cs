@@ -35,7 +35,7 @@ namespace Tasklify.Controllers
             return Ok(user);
         }
 
-        [HttpGet("{email}/GetUserByEmail")]
+        [HttpGet("GetUserByEmail/{email}")]
         public async Task<IActionResult> GetByEmail(string email)
         {
          
